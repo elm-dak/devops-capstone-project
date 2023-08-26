@@ -1,0 +1,38 @@
+#
+# This pipeline needs the following tasks from Tekton Hub
+#   - git-clone
+#   - flake8
+#
+---
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:  
+  name: cd-pipeline
+spec:
+  workspaces:
+    - name: pipeline-workspace
+  params:
+    - name: repo-url
+    - name: branch
+      default: main
+  tasks:
+    - name: init
+      workspaces:
+        - name: source
+          workspace: pipeline-workspace          
+      taskRef:
+        name: cleanup
+
+    - name: clone
+      workspaces:
+        - name: output
+          workspace: pipeline-workspace          
+      taskRef:
+        name: git-clone
+      params:
+      - name: url
+        value: $(params.repo-url)
+      - name: revision
+        value: $(params.branch)
+      runAfter:
+        - init
