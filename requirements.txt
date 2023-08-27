@@ -11,7 +11,9 @@ factory-boy==2.12.0
 Faker==19.3.1
 flake8==4.0.1
 Flask==2.1.2
+Flask-Cors==4.0.0
 Flask-SQLAlchemy==2.5.1
+Flask-Talisman==1.1.0
 greenlet==2.0.2
 gunicorn==20.1.0
 honcho==1.1.0
@@ -45,7 +47,6 @@ requests-toolbelt==1.0.0
 rich==13.5.2
 six==1.16.0
 SQLAlchemy==1.4.46
-talisman==0.1.0
 tomli==2.0.1
 tomlkit==0.12.1
 typing_extensions==4.7.1
@@ -53,5 +54,3 @@ urllib3==2.0.4
 Werkzeug==2.1.2
 wrapt==1.15.0
 zipp==3.16.2
-Flask-Talisman==0.8.1
-Flask-Cors==2.1.0
