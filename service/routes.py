@@ -150,7 +150,3 @@ def check_content_type(media_type):
         status.HTTP_415_UNSUPPORTED_MEDIA_TYPE,
         f"Content-Type must be {media_type}",
     )
-<<<<<<< HEAD
-    
-=======
->>>>>>> 910ff3adfbe634bf8a660f79e96f621a49fba725
