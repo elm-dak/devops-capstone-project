@@ -1,0 +1,268 @@
+[init : remove] Removing all files from /workspace/source ...
+
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + '[' false '=' true ]
+[clone : clone] + CHECKOUT_DIR=/workspace/output/
+[clone : clone] + '[' true '=' true ]
+[clone : clone] + cleandir
+[clone : clone] + '[' -d /workspace/output/ ]
+[clone : clone] + rm -rf '/workspace/output//*'
+[clone : clone] + rm -rf '/workspace/output//.[!.]*'
+[clone : clone] + rm -rf '/workspace/output//..?*'
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + test -z 
+[clone : clone] + git config --global --add safe.directory /workspace/output
+[clone : clone] + /ko-app/git-init '-url=https://github.com/learningpath123/devops-capstone-project.git' '-revision=main' '-refspec=' '-path=/workspace/output/' '-sslVerify=true' '-submodules=true' '-depth=1' '-sparseCheckoutDirectories='
+[clone : clone] {"level":"info","ts":1692979747.1010609,"caller":"git/git.go:176","msg":"Successfully cloned https://github.com/learningpath123/devops-capstone-project.git @ 45950165b20677d2c6c27ec4ec26be89a6b4046b (grafted, HEAD, origin/main) in path /workspace/output/"}
+[clone : clone] {"level":"info","ts":1692979747.1930163,"caller":"git/git.go:215","msg":"Successfully initialized and updated submodules in path /workspace/output/"}
+[clone : clone] + cd /workspace/output/
+[clone : clone] + git rev-parse HEAD
+[clone : clone] + RESULT_SHA=45950165b20677d2c6c27ec4ec26be89a6b4046b
+[clone : clone] + EXIT_CODE=0
+[clone : clone] + '[' 0 '!=' 0 ]
+[clone : clone] + git log -1 '--pretty=%ct'
+[clone : clone] + RESULT_COMMITTER_DATE=1692977052
+[clone : clone] + printf '%s' 1692977052
+[clone : clone] + printf '%s' 45950165b20677d2c6c27ec4ec26be89a6b4046b
+[clone : clone] + printf '%s' https://github.com/learningpath123/devops-capstone-project.git
+
+[lint : flake8] Collecting Werkzeug==2.1.2
+[lint : flake8]   Downloading Werkzeug-2.1.2-py3-none-any.whl (224 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 224.9/224.9 kB 12.5 MB/s eta 0:00:00
+[lint : flake8] Collecting SQLAlchemy==1.4.46
+[lint : flake8]   Downloading SQLAlchemy-1.4.46-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 26.4 MB/s eta 0:00:00
+[lint : flake8] Collecting Flask==2.1.2
+[lint : flake8]   Downloading Flask-2.1.2-py3-none-any.whl (95 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.2/95.2 kB 38.3 MB/s eta 0:00:00
+[lint : flake8] Collecting Flask-SQLAlchemy==2.5.1
+[lint : flake8]   Downloading Flask_SQLAlchemy-2.5.1-py2.py3-none-any.whl (17 kB)
+[lint : flake8] Collecting psycopg2-binary==2.9.3
+[lint : flake8]   Downloading psycopg2_binary-2.9.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.0/3.0 MB 114.2 MB/s eta 0:00:00
+[lint : flake8] Collecting python-dotenv==0.20.0
+[lint : flake8]   Downloading python_dotenv-0.20.0-py3-none-any.whl (17 kB)
+[lint : flake8] Collecting gunicorn==20.1.0
+[lint : flake8]   Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 36.0 MB/s eta 0:00:00
+[lint : flake8] Collecting honcho==1.1.0
+[lint : flake8]   Downloading honcho-1.1.0-py2.py3-none-any.whl (21 kB)
+[lint : flake8] Collecting pylint==2.14.0
+[lint : flake8]   Downloading pylint-2.14.0-py3-none-any.whl (485 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 485.0/485.0 kB 74.4 MB/s eta 0:00:00
+[lint : flake8] Collecting flake8==4.0.1
+[lint : flake8]   Downloading flake8-4.0.1-py2.py3-none-any.whl (64 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.1/64.1 kB 24.5 MB/s eta 0:00:00
+[lint : flake8] Collecting black==22.3.0
+[lint : flake8]   Downloading black-22.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.5 MB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.5/1.5 MB 112.4 MB/s eta 0:00:00
+[lint : flake8] Collecting nose==1.3.7
+[lint : flake8]   Downloading nose-1.3.7-py3-none-any.whl (154 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.7/154.7 kB 41.4 MB/s eta 0:00:00
+[lint : flake8] Collecting pinocchio==0.4.3
+[lint : flake8]   Downloading pinocchio-0.4.3-py3-none-any.whl (12 kB)
+[lint : flake8] Collecting factory-boy==2.12.0
+[lint : flake8]   Downloading factory_boy-2.12.0-py2.py3-none-any.whl (36 kB)
+[lint : flake8] Collecting coverage==6.3.2
+[lint : flake8]   Downloading coverage-6.3.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (210 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 210.7/210.7 kB 42.2 MB/s eta 0:00:00
+[lint : flake8] Collecting httpie==3.2.1
+[lint : flake8]   Downloading httpie-3.2.1-py3-none-any.whl (124 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.0/125.0 kB 49.7 MB/s eta 0:00:00
+[lint : flake8] Collecting Flask-Talisman
+[lint : flake8]   Downloading flask_talisman-1.1.0-py2.py3-none-any.whl (18 kB)
+[lint : flake8] Collecting Flask-Cors
+[lint : flake8]   Downloading Flask_Cors-4.0.0-py2.py3-none-any.whl (14 kB)
+[lint : flake8] Collecting greenlet!=0.4.17
+[lint : flake8]   Downloading greenlet-2.0.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (610 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 610.9/610.9 kB 99.5 MB/s eta 0:00:00
+[lint : flake8] Collecting importlib-metadata>=3.6.0
+[lint : flake8]   Downloading importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
+[lint : flake8] Collecting itsdangerous>=2.0
+[lint : flake8]   Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+[lint : flake8] Collecting click>=8.0
+[lint : flake8]   Downloading click-8.1.7-py3-none-any.whl (97 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 97.9/97.9 kB 44.8 MB/s eta 0:00:00
+[lint : flake8] Collecting Jinja2>=3.0
+[lint : flake8]   Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.1/133.1 kB 61.3 MB/s eta 0:00:00
+[lint : flake8] Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.9/site-packages (from gunicorn==20.1.0->-r requirements.txt (line 12)) (58.1.0)
+[lint : flake8] Collecting dill>=0.2
+[lint : flake8]   Downloading dill-0.3.7-py3-none-any.whl (115 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.3/115.3 kB 49.6 MB/s eta 0:00:00
+[lint : flake8] Collecting tomlkit>=0.10.1
+[lint : flake8]   Downloading tomlkit-0.12.1-py3-none-any.whl (37 kB)
+[lint : flake8] Collecting astroid<=2.12.0-dev0,>=2.11.5
+[lint : flake8]   Downloading astroid-2.11.7-py3-none-any.whl (251 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 251.2/251.2 kB 74.3 MB/s eta 0:00:00
+[lint : flake8] Collecting platformdirs>=2.2.0
+[lint : flake8]   Downloading platformdirs-3.10.0-py3-none-any.whl (17 kB)
+[lint : flake8] Collecting mccabe<0.8,>=0.6
+[lint : flake8]   Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+[lint : flake8] Collecting isort<6,>=4.2.5
+[lint : flake8]   Downloading isort-5.12.0-py3-none-any.whl (91 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.2/91.2 kB 40.2 MB/s eta 0:00:00
+[lint : flake8] Collecting tomli>=1.1.0
+[lint : flake8]   Downloading tomli-2.0.1-py3-none-any.whl (12 kB)
+[lint : flake8] Collecting typing-extensions>=3.10.0
+[lint : flake8]   Downloading typing_extensions-4.7.1-py3-none-any.whl (33 kB)
+[lint : flake8] Collecting pycodestyle<2.9.0,>=2.8.0
+[lint : flake8]   Downloading pycodestyle-2.8.0-py2.py3-none-any.whl (42 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 kB 26.1 MB/s eta 0:00:00
+[lint : flake8] Collecting pyflakes<2.5.0,>=2.4.0
+[lint : flake8]   Downloading pyflakes-2.4.0-py2.py3-none-any.whl (69 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.7/69.7 kB 33.8 MB/s eta 0:00:00
+[lint : flake8] Collecting mccabe<0.8,>=0.6
+[lint : flake8]   Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+[lint : flake8] Collecting mypy-extensions>=0.4.3
+[lint : flake8]   Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+[lint : flake8] Collecting pathspec>=0.9.0
+[lint : flake8]   Downloading pathspec-0.11.2-py3-none-any.whl (29 kB)
+[lint : flake8] Collecting colorama
+[lint : flake8]   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+[lint : flake8] Collecting Faker>=0.7.0
+[lint : flake8]   Downloading Faker-19.3.1-py3-none-any.whl (1.7 MB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 28.2 MB/s eta 0:00:00
+[lint : flake8] Collecting rich>=9.10.0
+[lint : flake8]   Downloading rich-13.5.2-py3-none-any.whl (239 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 239.7/239.7 kB 76.4 MB/s eta 0:00:00
+[lint : flake8] Collecting requests[socks]>=2.22.0
+[lint : flake8]   Downloading requests-2.31.0-py3-none-any.whl (62 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.6/62.6 kB 35.8 MB/s eta 0:00:00
+[lint : flake8] Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (from httpie==3.2.1->-r requirements.txt (line 29)) (23.0.1)
+[lint : flake8] Collecting Pygments>=2.5.2
+[lint : flake8]   Downloading Pygments-2.16.1-py3-none-any.whl (1.2 MB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 20.2 MB/s eta 0:00:00
+[lint : flake8] Collecting requests-toolbelt>=0.9.1
+[lint : flake8]   Downloading requests_toolbelt-1.0.0-py2.py3-none-any.whl (54 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.5/54.5 kB 24.8 MB/s eta 0:00:00
+[lint : flake8] Collecting charset-normalizer>=2.0.0
+[lint : flake8]   Downloading charset_normalizer-3.2.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (202 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 202.1/202.1 kB 76.1 MB/s eta 0:00:00
+[lint : flake8] Collecting multidict>=4.7.0
+[lint : flake8]   Downloading multidict-6.0.4-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (114 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.2/114.2 kB 47.0 MB/s eta 0:00:00
+[lint : flake8] Collecting defusedxml>=0.6.0
+[lint : flake8]   Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+[lint : flake8] Collecting lazy-object-proxy>=1.4.0
+[lint : flake8]   Downloading lazy_object_proxy-1.9.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (62 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.1/62.1 kB 34.5 MB/s eta 0:00:00
+[lint : flake8] Collecting wrapt<2,>=1.11
+[lint : flake8]   Downloading wrapt-1.15.0-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (78 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.3/78.3 kB 41.8 MB/s eta 0:00:00
+[lint : flake8] Collecting python-dateutil>=2.4
+[lint : flake8]   Downloading python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 247.7/247.7 kB 81.1 MB/s eta 0:00:00
+[lint : flake8] Collecting zipp>=0.5
+[lint : flake8]   Downloading zipp-3.16.2-py3-none-any.whl (7.2 kB)
+[lint : flake8] Collecting MarkupSafe>=2.0
+[lint : flake8]   Downloading MarkupSafe-2.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+[lint : flake8] Collecting urllib3<3,>=1.21.1
+[lint : flake8]   Downloading urllib3-2.0.4-py3-none-any.whl (123 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 123.9/123.9 kB 61.4 MB/s eta 0:00:00
+[lint : flake8] Collecting certifi>=2017.4.17
+[lint : flake8]   Downloading certifi-2023.7.22-py3-none-any.whl (158 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 158.3/158.3 kB 68.7 MB/s eta 0:00:00
+[lint : flake8] Collecting idna<4,>=2.5
+[lint : flake8]   Downloading idna-3.4-py3-none-any.whl (61 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.5/61.5 kB 1.0 MB/s eta 0:00:00
+[lint : flake8] Collecting PySocks!=1.5.7,>=1.5.6
+[lint : flake8]   Downloading PySocks-1.7.1-py3-none-any.whl (16 kB)
+[lint : flake8] Collecting markdown-it-py>=2.2.0
+[lint : flake8]   Downloading markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+[lint : flake8]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.5/87.5 kB 45.7 MB/s eta 0:00:00
+[lint : flake8] Collecting mdurl~=0.1
+[lint : flake8]   Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+[lint : flake8] Collecting six>=1.5
+[lint : flake8]   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+[lint : flake8] Installing collected packages: nose, mccabe, honcho, Flask-Talisman, zipp, wrapt, Werkzeug, urllib3, typing-extensions, tomlkit, tomli, six, python-dotenv, PySocks, Pygments, pyflakes, pycodestyle, psycopg2-binary, platformdirs, pathspec, mypy-extensions, multidict, mdurl, MarkupSafe, lazy-object-proxy, itsdangerous, isort, idna, gunicorn, greenlet, dill, defusedxml, coverage, colorama, click, charset-normalizer, certifi, SQLAlchemy, requests, python-dateutil, pinocchio, markdown-it-py, Jinja2, importlib-metadata, flake8, black, astroid, rich, requests-toolbelt, pylint, Flask, Faker, httpie, Flask-SQLAlchemy, Flask-Cors, factory-boy
+[lint : flake8] Successfully installed Faker-19.3.1 Flask-2.1.2 Flask-Cors-4.0.0 Flask-SQLAlchemy-2.5.1 Flask-Talisman-1.1.0 Jinja2-3.1.2 MarkupSafe-2.1.3 PySocks-1.7.1 Pygments-2.16.1 SQLAlchemy-1.4.46 Werkzeug-2.1.2 astroid-2.11.7 black-22.3.0 certifi-2023.7.22 charset-normalizer-3.2.0 click-8.1.7 colorama-0.4.6 coverage-6.3.2 defusedxml-0.7.1 dill-0.3.7 factory-boy-2.12.0 flake8-4.0.1 greenlet-2.0.2 gunicorn-20.1.0 honcho-1.1.0 httpie-3.2.1 idna-3.4 importlib-metadata-6.8.0 isort-5.12.0 itsdangerous-2.1.2 lazy-object-proxy-1.9.0 markdown-it-py-3.0.0 mccabe-0.6.1 mdurl-0.1.2 multidict-6.0.4 mypy-extensions-1.0.0 nose-1.3.7 pathspec-0.11.2 pinocchio-0.4.3 platformdirs-3.10.0 psycopg2-binary-2.9.3 pycodestyle-2.8.0 pyflakes-2.4.0 pylint-2.14.0 python-dateutil-2.8.2 python-dotenv-0.20.0 requests-2.31.0 requests-toolbelt-1.0.0 rich-13.5.2 six-1.16.0 tomli-2.0.1 tomlkit-0.12.1 typing-extensions-4.7.1 urllib3-2.0.4 wrapt-1.15.0 zipp-3.16.2
+[lint : flake8] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[lint : flake8] 
+[lint : flake8] [notice] A new release of pip is available: 23.0.1 -> 23.2.1
+[lint : flake8] [notice] To update, run: pip install --upgrade pip
+[lint : flake8] ./tests/test_routes.py:32:1: E303 too many blank lines (3)
+[lint : flake8] ./tests/test_routes.py:136:5: E303 too many blank lines (2)
+[lint : flake8] ./tests/test_routes.py:145:1: W293 blank line contains whitespace
+[lint : flake8] ./tests/test_routes.py:204:83: W292 no newline at end of file
+[lint : flake8] 2     E303 too many blank lines (3)
+[lint : flake8] 1     W292 no newline at end of file
+[lint : flake8] 1     W293 blank line contains whitespace
+[lint : flake8] 4
+
+[tests : nosetests] ***** Installing dependencies *****
+[tests : nosetests] Requirement already satisfied: pip in /usr/local/lib/python3.9/site-packages (23.0.1)
+[tests : nosetests] Collecting pip
+[tests : nosetests]   Downloading pip-23.2.1-py3-none-any.whl (2.1 MB)
+[tests : nosetests]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 48.0 MB/s eta 0:00:00
+[tests : nosetests] Requirement already satisfied: wheel in /usr/local/lib/python3.9/site-packages (0.41.1)
+[tests : nosetests] Collecting wheel
+[tests : nosetests]   Downloading wheel-0.41.2-py3-none-any.whl (64 kB)
+[tests : nosetests]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 64.8/64.8 kB 12.6 MB/s eta 0:00:00
+[tests : nosetests] Installing collected packages: wheel, pip
+[tests : nosetests]   Attempting uninstall: wheel
+[tests : nosetests]     Found existing installation: wheel 0.41.1
+[tests : nosetests]     Uninstalling wheel-0.41.1:
+[tests : nosetests]       Successfully uninstalled wheel-0.41.1
+[tests : nosetests]   Attempting uninstall: pip
+[tests : nosetests]     Found existing installation: pip 23.0.1
+[tests : nosetests]     Uninstalling pip-23.0.1:
+[tests : nosetests]       Successfully uninstalled pip-23.0.1
+[tests : nosetests] Successfully installed pip-23.2.1 wheel-0.41.2
+[tests : nosetests] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[tests : nosetests] WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+[tests : nosetests] ***** Running nosetests with: -v --with-spec --spec-color
+[tests : nosetests] nose.config: INFO: Ignoring files matching ['^\\.', '^_', '^setup\\.py$']
+[tests : nosetests] nose.plugins.cover: INFO: Coverage report will include only packages: ['service']
+[tests : nosetests] 
+[tests : nosetests] Test Flask CLI Commands
+[tests : nosetests] [1;32m- It should call the db-create command[1;0m
+[tests : nosetests] 
+[tests : nosetests] Test Cases for Account Model
+[tests : nosetests] [1;32m- It should Create an account and add it to the database[1;0m
+[tests : nosetests] [1;32m- It should Create an Account and assert that it exists[1;0m
+[tests : nosetests] [1;32m- It should Delete an account from the database[1;0m
+[tests : nosetests] [1;32m- It should Deserialize an account[1;0m
+[tests : nosetests] [1;32m- It should not Deserialize an account with a KeyError[1;0m
+[tests : nosetests] [1;32m- It should not Deserialize an account with a TypeError[1;0m
+[tests : nosetests] [1;32m- It should Find an Account by name[1;0m
+[tests : nosetests] [1;32m- It should List all Accounts in the database[1;0m
+[tests : nosetests] [1;32m- It should Read an account[1;0m
+[tests : nosetests] [1;32m- It should Serialize an account[1;0m
+[tests : nosetests] [1;32m- It should Update an account[1;0m
+[tests : nosetests] 
+[tests : nosetests] Account Service Tests
+[tests : nosetests] [1;32m- It should not Create an Account when sending the wrong data[1;0m
+[tests : nosetests] [1;32m- It should return a CORS header[1;0m
+[tests : nosetests] [1;32m- It should Create a new Account[1;0m
+[tests : nosetests] [1;32m- It should Delete an Account[1;0m
+[tests : nosetests] [1;32m- It should Read a single Account[1;0m
+[tests : nosetests] [1;32m- It should Get a list of Accounts[1;0m
+[tests : nosetests] [1;32m- It should not Read an Account that is not found[1;0m
+[tests : nosetests] [1;32m- It should be healthy[1;0m
+[tests : nosetests] [1;32m- It should get 200_OK from the Home Page[1;0m
+[tests : nosetests] [1;32m- It should not allow an illegal method call[1;0m
+[tests : nosetests] [1;32m- It should return security headers[1;0m
+[tests : nosetests] [1;32m- It should not Create an Account when sending the wrong media type[1;0m
+[tests : nosetests] [1;32m- It should Update an existing Account[1;0m
+[tests : nosetests] 
+[tests : nosetests] Name                               Stmts   Miss  Cover   Missing
+[tests : nosetests] ----------------------------------------------------------------
+[tests : nosetests] service/__init__.py                   22      3    86%   37-40
+[tests : nosetests] service/common/__init__.py             0      0   100%
+[tests : nosetests] service/common/cli_commands.py         7      0   100%
+[tests : nosetests] service/common/error_handlers.py      32      3    91%   76-78
+[tests : nosetests] service/common/log_handlers.py        10      1    90%   21
+[tests : nosetests] service/common/status.py              46      0   100%
+[tests : nosetests] service/config.py                     11      5    55%   12-16
+[tests : nosetests] service/models.py                     69      3    96%   32, 98, 127
+[tests : nosetests] service/routes.py                     56      1    98%   110
+[tests : nosetests] ----------------------------------------------------------------
+[tests : nosetests] TOTAL                                253     16    94%
+[tests : nosetests] ----------------------------------------------------------------------
+[tests : nosetests] Ran 25 tests in 2.660s
+[tests : nosetests] 
+[tests : nosetests] OK
+[tests : nosetests] 
